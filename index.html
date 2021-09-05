@@ -8,6 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    
 </head>
 <body>
     <div class="container-fluid">
@@ -47,20 +51,118 @@
             </div>
 
             <div class="carousel-bg center">
-                <div class="thumb-container center swipe">
-                    <div class="thumbnail">
-                        <img src="/images/thumb1.png" alt="">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/images/thumb2.png" alt="">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/images/thumb1.png" alt="">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/images/thumb2.png" alt="">
-                    </div>
-                
+                <div class="thumb-container center">     
+                    <div class="container">
+                        <div class="row blog">
+                        <div class="col-md-12">                        
+                        <div id="blogCarousel" class="carousel slide" data-ride="carousel">                        
+                        <ol class="carousel-indicators">                        
+                        <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>                        
+                        <li data-target="#blogCarousel" data-slide-to="1"></li>                        
+                        <li data-target="#blogCarousel" data-slide-to="2"></li>                        
+                        </ol>
+                        
+                        <!-- Carousel items -->
+                        
+                        <div class="carousel-inner">                        
+                        <div class="carousel-item active">                        
+                        <div class="row">                        
+                        <div class="col-md-3">                        
+                        <a href="#">                        
+                        <img src="/images/thumb1.png" alt="Image" style="max-width:100%;">                        
+                        </a>                        
+                        </div>                        
+                        <div class="col-md-3">                        
+                        <a href="#">                        
+                        <img src="/images/thumb2.png" alt="Image" style="max-width:100%;">                        
+                        </a>                        
+                        </div>                        
+                        <div class="col-md-3">                        
+                        <a href="#">                        
+                        <img src="/images/thumb1.png" alt="Image" style="max-width:100%;">                        
+                        </a>                        
+                        </div>                        
+                        <div class="col-md-3">                        
+                        <a href="#">                        
+                        <img src="/images/thumb2.png" alt="Image" style="max-width:100%;">                        
+                        </a>                        
+                        </div>                        
+                        </div>                        
+                        <!--.row-->
+                        
+                        </div>                        
+                        <!--.item-->                        
+                        <div class="carousel-item">                        
+                        <div class="row">                        
+                        <div class="col-md-3">                        
+                        <a href="#">                        
+                        <img src="/images/thumb1.png" alt="Image" style="max-width:100%;">                        
+                        </a>                        
+                        </div>                        
+                        <div class="col-md-3">                        
+                        <a href="#">                        
+                        <img src="/images/thumb2.png" alt="Image" style="max-width:100%;">                        
+                        </a>                        
+                        </div>                        
+                        <div class="col-md-3">                        
+                        <a href="#">                        
+                        <img src="/images/thumb1.png" alt="Image" style="max-width:100%;">                        
+                        </a>                        
+                        </div>
+                        
+                        <div class="col-md-3">                        
+                        <a href="#">                        
+                        <img src="/images/thumb2.png" alt="Image" style="max-width:100%;">                        
+                        </a>                        
+                        </div>                        
+                        </div>
+                        
+                        <!--.row-->
+                        
+                        </div>
+                        <div class="carousel-item">                        
+                        <div class="row">                        
+                        <div class="col-md-3">                        
+                        <a href="#">                        
+                        <img src="/images/thumb1.png" alt="Image" style="max-width:100%;">                        
+                        </a>                        
+                        </div>                        
+                        <div class="col-md-3">                        
+                        <a href="#">                        
+                        <img src="/images/thumb2.png" alt="Image" style="max-width:100%;">                        
+                        </a>                        
+                        </div>                        
+                        <div class="col-md-3">                        
+                        <a href="#">                        
+                        <img src="/images/thumb1.png" alt="Image" style="max-width:100%;">                        
+                        </a>                        
+                        </div>
+                        
+                        <div class="col-md-3">                        
+                        <a href="#">                        
+                        <img src="/images/thumb2.png" alt="Image" style="max-width:100%;">                        
+                        </a>                        
+                        </div>                        
+                        </div>
+                        
+                        <!--.row-->
+                        
+                        </div>
+                        
+                        <!--.item-->
+                        
+                        </div>
+                        
+                        <!--.carousel-inner-->
+                        
+                        </div>
+                        
+                        <!--.Carousel-->
+                        
+                        </div>                        
+                        </div>                        
+                        </div>
+                            
                 </div>
             </div>
         </section>
@@ -69,7 +171,7 @@
         <!-- Section 3 -->
         <section id="climb-section" class="section-3">
             <div class="climb-text-container">
-                <div class="climb-text-section">
+                <div class="climb-text-section container-sm">
                     <div class="climb">
                         <img src="/images/02climb.png" alt="" class="numbers">
                     </div>
@@ -125,7 +227,17 @@
         <!-- End of Section 3 -->
 
     </div>
-    
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </body>
 </html>

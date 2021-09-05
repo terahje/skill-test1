@@ -43,6 +43,11 @@ html {
   margin-right: auto;
   margin-left: auto;
 }
+
+.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
 /* End of Common Styles */
 
 /* Section 1 */
@@ -167,10 +172,11 @@ html {
 
 .carousel-bg {
   width: 100%;
-  height: 20vh;
+  height: auto;
   position: absolute;
   background-color: rgba(65, 79, 107, 0.85);
   bottom: 0;
+  padding: 3rem;
 }
 
 .thumb-container {
@@ -179,7 +185,7 @@ html {
 }
 
 .thumb-container:hover {
-  cursor: crosshair;
+  cursor: pointer;
 }
 
 .thumbnail {
@@ -191,10 +197,23 @@ html {
   width: 100%;
 }
 
-/* .swipe {
-  overflow: auto;
-  white-space: nowrap;
-} */
+.blog .carousel-indicators {
+  left: 0;
+  top: auto;
+  bottom: -30px;
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+  background: rgba(231, 231, 231, 0.3);
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.blog .carousel-indicators .active {
+  background: var(--white-color);
+}
 
 /* End of Section 2 */
 
@@ -220,7 +239,7 @@ html {
   font-size: 1.5rem;
   font-weight: 300;
   margin: 0 2rem;
-  width: 58%;
+  width: 60%;
 }
 
 .tab-container {
@@ -268,8 +287,8 @@ html {
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
   color: var(--primary-color);
-  background-color: rgb(175, 182, 197);
-  border-color: var(--primary-color);
+  background-color: rgb(175, 182, 197) !important;
+  border-color: var(--primary-color) !important;
   text-decoration: underline;
   text-underline-offset: 0.5rem;
   text-decoration-thickness: 1px;
@@ -320,7 +339,8 @@ html {
 
 .footer-logo {
   position: absolute;
-  margin: 1rem 0;
+  align-self: center;
+  display: flex;
   left: 16%;
 }
 
