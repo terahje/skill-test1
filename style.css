@@ -68,7 +68,7 @@ html {
 }
 
 .navbar-link {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   display: inline-block;
   justify-content: space-evenly;
   margin: 0 3rem;
@@ -78,12 +78,13 @@ html {
   font-weight: 600;
   border-bottom: 1px solid var(--white-color);
   text-decoration: none;
+  letter-spacing: 0.1rem;
 }
 
 .logo:hover,
 .navbar-link:hover {
   transform: scale(1.2);
-  color: var(--primary-color);
+  color: var(--white-color);
   cursor: pointer;
 }
 
@@ -105,7 +106,7 @@ html {
 }
 
 .navbar-link2 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   display: inline-block;
   justify-content: space-evenly;
   margin: 0 3rem;
@@ -115,6 +116,7 @@ html {
   font-weight: 600;
   border-bottom: 1px solid var(--primary-color);
   text-decoration: none;
+  letter-spacing: 0.1rem;
 }
 
 .navbar2 {
@@ -182,8 +184,11 @@ html {
 
 .thumbnail {
   margin: 0 0.3rem;
+}
+
+.thumbnail img {
   height: 80%;
-  width: auto;
+  width: 100%;
 }
 
 /* .swipe {
@@ -244,12 +249,10 @@ html {
 }
 
 .schedule-container {
-  height: 30rem;
-  width: 40rem;
-  background-color: rgba(255, 255, 255, 0.7);
   position: absolute;
   top: 15%;
   left: 16%;
+  z-index: 1;
 }
 
 .nav-tabs .nav-link {
