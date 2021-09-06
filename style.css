@@ -67,7 +67,7 @@ html {
 }
 
 .navbar {
-  position: absolute;
+  position: absolute !important;
   top: 1rem;
   right: 16%;
 }
@@ -351,3 +351,192 @@ html {
 }
 /* End of Footer */
 /* End of Section 3 */
+
+/* Responsive */
+
+@media (max-width: 1500px) {
+  html {
+    font-size: 45%;
+  }
+  .section-1 {
+    width: auto;
+    height: 39vh;
+  }
+}
+
+@media (max-width: 1100px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-height: 1400px) {
+  .section-1 {
+    width: auto;
+    height: 100vh;
+  }
+
+  .logo img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .sticky-nav {
+    height: 8.7rem;
+    width: 100%;
+  }
+
+  .sticky-nav img {
+    width: 18rem;
+    height: 5rem;
+  }
+
+  .section-2 {
+    width: 100%;
+    height: 108vh;
+  }
+
+  .col-md-3 {
+    padding-right: 2px !important;
+    padding-left: 2px !important;
+  }
+
+  .blog .carousel-indicators {
+    bottom: -20px;
+  }
+
+  .history-text {
+    width: 90%;
+  }
+
+  .history img {
+    height: 13rem;
+    width: 24rem;
+  }
+
+  .history-text {
+    font-size: 1.8rem;
+  }
+
+  .climb-text {
+    font-size: 1.8rem;
+  }
+  .climb img {
+    height: 13rem;
+    width: 24rem;
+  }
+
+  .climb-text {
+    width: 52%;
+  }
+
+  .section-3 {
+    height: 90vh;
+  }
+
+  .footer-logo img {
+    width: 18rem;
+    height: 5rem;
+  }
+
+  .schedule-container img {
+    height: 25rem;
+    width: 40rem;
+  }
+}
+
+@media (max-width: 1400) {
+  .section-1 {
+    height: 46vh;
+  }
+}
+
+@media (min-width: 770px) {
+  .accordion {
+    display: none;
+  }
+}
+
+@media (max-width: 770px) {
+  .thumb-container {
+    display: none;
+  }
+  .carousel-bg {
+    background-color: rgba(65, 79, 107, 0);
+  }
+
+  .accordion {
+    width: 100%;
+  }
+
+  .accordion-item {
+    background-color: rgba(65, 79, 107, 0.8);
+  }
+
+  .accordion-button:not(.collapsed) {
+    color: rgba(65, 79, 107, 0.8);
+    background-color: #fff;
+  }
+}
+
+@media (max-width: 450px) {
+  .section-1 {
+    height: 60vh;
+  }
+
+  .section-2 {
+    height: 96rem;
+    overflow: auto;
+  }
+
+  .thumb-container {
+    display: none;
+  }
+
+  .accordion {
+    height: 20rem;
+    width: 100%;
+  }
+
+  .climb-text {
+    width: 40%;
+  }
+
+  .climb img {
+    margin-top: 2rem;
+  }
+
+  .logo {
+    left: 5%;
+  }
+
+  .logo2 {
+    position: absolute;
+    top: 1rem;
+    left: 5%;
+    transition: transform 0.5s;
+  }
+
+  .footer-logo {
+    left: 5%;
+  }
+
+  .copy {
+    right: 5%;
+  }
+
+  .copy img {
+    width: 35rem;
+  }
+
+  .navbar,
+  .navbar2 {
+    right: 0%;
+  }
+
+  .schedule-container {
+    left: 10%;
+  }
+}
+
+/* End of Responsive */
