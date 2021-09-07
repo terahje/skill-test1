@@ -12,9 +12,11 @@
 }
 
 html {
+  width: 100%;
+  height: 100%;
   font-size: 62.5%;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   overflow-x: hidden !important;
 }
 
@@ -90,6 +92,7 @@ html {
 .navbar-link:hover {
   transform: scale(1.2);
   color: var(--white-color);
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -134,6 +137,7 @@ html {
 .navbar-link2:hover {
   transform: scale(1.2);
   color: var(--primary-color);
+  text-decoration: none;
   cursor: pointer;
 }
 /* End of Stickey Nav */
@@ -179,13 +183,13 @@ html {
   padding: 3rem;
 }
 
+.carousel-item a {
+  cursor: default;
+}
+
 .thumb-container {
   position: relative;
   width: 67%;
-}
-
-.thumb-container:hover {
-  cursor: pointer;
 }
 
 .thumbnail {
@@ -200,7 +204,11 @@ html {
 .blog .carousel-indicators {
   left: 0;
   top: auto;
-  bottom: -30px;
+  bottom: -20%;
+}
+
+.blog .carousel-indicators:hover {
+  cursor: pointer;
 }
 
 /* The colour of the indicators */
@@ -341,6 +349,8 @@ html {
   position: absolute;
   align-self: center;
   display: flex;
+  width: 18rem;
+  height: 5rem;
   left: 16%;
 }
 
@@ -362,6 +372,10 @@ html {
     width: auto;
     height: 39vh;
   }
+
+  .carousel-bg {
+    padding: 4rem;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -382,7 +396,6 @@ html {
   }
 
   .sticky-nav {
-    height: 8.7rem;
     width: 100%;
   }
 
@@ -393,16 +406,12 @@ html {
 
   .section-2 {
     width: 100%;
-    height: 108vh;
+    height: 105vh;
   }
 
   .col-md-3 {
     padding-right: 2px !important;
     padding-left: 2px !important;
-  }
-
-  .blog .carousel-indicators {
-    bottom: -20px;
   }
 
   .history-text {
@@ -432,11 +441,6 @@ html {
 
   .section-3 {
     height: 90vh;
-  }
-
-  .footer-logo img {
-    width: 18rem;
-    height: 5rem;
   }
 
   .schedule-container img {
