@@ -462,28 +462,6 @@ html {
 }
 
 @media (max-width: 770px) {
-  .thumb-container {
-    display: none;
-  }
-  .carousel-bg {
-    background-color: rgba(65, 79, 107, 0);
-  }
-
-  .accordion {
-    width: 100%;
-  }
-
-  .accordion-item {
-    background-color: rgba(65, 79, 107, 0.8);
-  }
-
-  .accordion-button:not(.collapsed) {
-    color: rgba(65, 79, 107, 0.8);
-    background-color: #fff;
-  }
-}
-
-@media (max-width: 450px) {
   .section-1 {
     height: 60vh;
   }
@@ -493,14 +471,15 @@ html {
     overflow: auto;
   }
 
-  .thumb-container {
-    display: none;
+  .carousel-inner {
+    overflow: hidden;
+    height: 14vh;
   }
 
-  .accordion {
+  /* .accordion {
     height: 20rem;
     width: 100%;
-  }
+  } */
 
   .climb-text {
     width: 40%;
@@ -519,6 +498,51 @@ html {
     top: 1rem;
     left: 5%;
     transition: transform 0.5s;
+  }
+
+  .section-3 {
+    height: auto;
+  }
+
+  .tab-container {
+    display: none;
+  }
+
+  #myTabContent {
+    display: none;
+  }
+
+  .schedule-container img {
+    display: none;
+  }
+
+  .schedule {
+    margin: 0;
+    transform: scale(1);
+  }
+
+  .accordion-item:first-of-type .accordion-button,
+  .accordion-button:not(.collapsed),
+  .accordion-item:last-of-type .accordion-button.collapsed {
+    font-size: 3rem;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+  }
+
+  .accordion-bg1 {
+    background: url('/images/tab1.png') no-repeat;
+    background-size: cover;
+    height: 80%;
+    background-position: bottom;
+  }
+  .accordion-bg2 {
+    background: url('/images/tab2.png') no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: bottom;
   }
 
   .footer-logo {
@@ -542,5 +566,4 @@ html {
     left: 10%;
   }
 }
-
 /* End of Responsive */
