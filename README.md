@@ -20,6 +20,7 @@ A PSD to HTML conversion, I was given a file from which I extracted the images. 
 - HTML
 - CSS
 - JavaScript
+- Bootstrap
 
 ## Usage
 
